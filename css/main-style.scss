@@ -92,8 +92,8 @@ a {
   margin-left: 34px;
   @include title-font(1rem, 500);
   vertical-align: middle;
-  @include max-screen(350px){
-    margin: 10px 0 0 0;
+  @include max-screen(430px){
+    display: none;
   }
 }
 

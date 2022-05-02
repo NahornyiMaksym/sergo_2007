@@ -52,9 +52,9 @@ a {
   font-size: 1rem;
   font-family: "Oswald", sans-serif;
   vertical-align: middle; }
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 430px) {
     .number {
-      margin: 10px 0 0 0; } }
+      display: none; } }
 
 @media screen and (max-width: 350px) {
   .logo-number {
