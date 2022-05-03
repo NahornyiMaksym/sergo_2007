@@ -10,6 +10,7 @@ $title-font: 'Oswald', sans-serif;
 $main-font: 'Roboto', sans-serif;
 $font-color: #000;
 $service-numbers: #EA8733;
+$shadow: 0.1px 0px 20px -6px rgba(0, 0, 0, 0.25);
 
 @mixin title-font($size, $weight,) {
   font-weight: $weight;
@@ -296,7 +297,7 @@ h3{
   article{
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0.1px 0px 20px -6px rgba(0, 0, 0, 0.25);
+    box-shadow: $shadow;
     h4{
       @include main-font(24px,700);
       line-height: 150%;
@@ -367,7 +368,7 @@ h3{
     display: flex;
     align-items: center;
     border-radius: 8px;
-    box-shadow: 0.1px 0px 20px -6px rgba(0, 0, 0, 0.25);
+    box-shadow: $shadow;
     padding: 16px 45px 16px 30px;
     @include max-screen(768px){
       flex-direction: column;
@@ -439,6 +440,59 @@ h3{
     }
     @include max-screen(575px){
       margin-top: 0;
+    }
+  }
+}
+
+.comentarios-section {
+  background: linear-gradient(90deg, rgba(146, 146, 146, 0.2) 0%, rgba(255, 255, 255, 0.5) 24.76%);
+  padding: 40px 0;
+  .comentarios-unit {
+    padding: 25px 57px 21px;
+    border-radius: 20px;
+    box-shadow: $shadow;
+    @include max-screen(992px){
+      margin-top: 24px;
+    }
+    .stars {
+      margin-bottom: 35px;
+    }
+    .comentarios-txt {
+      @include main-font(1rem, 400);
+      @include max-screen(768px){
+        font-size: 14px;
+      }
+      margin-bottom: 20px;
+    }
+    .comentarios-author {
+      display: flex;
+      img {
+        margin-right: 14px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        overflow: hidden;
+        @include max-screen(768px){
+          width: 62px;
+          height: 62px;
+        }
+      }
+      p {
+        padding-top: 25px;
+        @include main-font(1.5rem, bold);
+        @include max-screen(768px){
+          font-size: 18px;
+          padding-top: 20px;
+        }
+        span {
+          @include main-font(14px, 400);
+          color: #EA8733;
+          @include max-screen(768px){
+            font-size: 12px;
+          }
+
+        }
+      }
     }
   }
 }

@@ -349,6 +349,59 @@ h3 {
     .ventajas-section .ventajas-img {
       margin-top: 0; } }
 
+.comentarios-section {
+  background: linear-gradient(90deg, rgba(146, 146, 146, 0.2) 0%, rgba(255, 255, 255, 0.5) 24.76%);
+  padding: 40px 0; }
+  .comentarios-section .comentarios-unit {
+    padding: 25px 57px 21px;
+    border-radius: 20px;
+    box-shadow: 0.1px 0px 20px -6px rgba(0, 0, 0, 0.25); }
+    @media screen and (max-width: 992px) {
+      .comentarios-section .comentarios-unit {
+        margin-top: 24px; } }
+    .comentarios-section .comentarios-unit .stars {
+      margin-bottom: 35px; }
+    .comentarios-section .comentarios-unit .comentarios-txt {
+      font-weight: 400;
+      color: #000;
+      font-size: 1rem;
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 20px; }
+      @media screen and (max-width: 768px) {
+        .comentarios-section .comentarios-unit .comentarios-txt {
+          font-size: 14px; } }
+    .comentarios-section .comentarios-unit .comentarios-author {
+      display: flex; }
+      .comentarios-section .comentarios-unit .comentarios-author img {
+        margin-right: 14px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        overflow: hidden; }
+        @media screen and (max-width: 768px) {
+          .comentarios-section .comentarios-unit .comentarios-author img {
+            width: 62px;
+            height: 62px; } }
+      .comentarios-section .comentarios-unit .comentarios-author p {
+        padding-top: 25px;
+        font-weight: bold;
+        color: #000;
+        font-size: 1.5rem;
+        font-family: "Roboto", sans-serif; }
+        @media screen and (max-width: 768px) {
+          .comentarios-section .comentarios-unit .comentarios-author p {
+            font-size: 18px;
+            padding-top: 20px; } }
+        .comentarios-section .comentarios-unit .comentarios-author p span {
+          font-weight: 400;
+          color: #000;
+          font-size: 14px;
+          font-family: "Roboto", sans-serif;
+          color: #EA8733; }
+          @media screen and (max-width: 768px) {
+            .comentarios-section .comentarios-unit .comentarios-author p span {
+              font-size: 12px; } }
+
 footer {
   padding-top: 74px; }
   footer .container-fluid {
