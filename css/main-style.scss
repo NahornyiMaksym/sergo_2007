@@ -257,7 +257,50 @@ h6 {
   width: 0%;
   left: 50%;
 }
+.back-img {
+  position: absolute;
+  right: 15%;
+  bottom: 7%;
+  z-index: -1;
+  object-position: left;
+  @include max-screen(1400px) {
+    bottom: 14%;
+  }
+  @include max-screen(1200px) {
+    bottom: 15%;
+    right: 10%;
+  }
+  @include max-screen(992px) {
+    bottom: 15%;
+    right: 5%;
+  }
+  @include max-screen(768px) {
+    bottom: 170px;
+    right: 0;
+  }
+  @include max-screen(576px) {
+    width: 300px;
+    bottom: 167px;
+    right: -12px;
+  }
+  @include max-screen(430px) {
+    max-width: 290px;
+    bottom: 185px;
+    width: 80%;
+    padding-left: 15px;
+    margin-left: -15px;
+  }
 
+}
+
+.arrow-down {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  @include max-screen(768px) {
+    display: none;
+  }
+}
 h3 {
   @include title-font(56px, bold,);
   @include txt-upper;
@@ -269,35 +312,80 @@ h3 {
 
 .first-banner {
   padding-top: 82px;
+  padding-bottom: 100px;
+  @include max-screen(430px) {
+    padding-top: 25px;
+  }
 
   h1 {
     @include title-font(130px, 500,);
     line-height: 92%;
     text-transform: uppercase;
     letter-spacing: 0;
+    @include max-screen(1400px) {
+      font-size: 115px;
+    }
+    @include max-screen(992px) {
+      font-size: 95px;
+    }
+    @include max-screen(768px) {
+      font-size: 65px;
+    }
+    @include max-screen(576px) {
+      font-size: 55px;
+    }
+    @include max-screen(430px) {
+      font-size: 38px;
+    }
   }
 
   .add-letter {
     padding-left: 16rem;
+    @include max-screen(1400px) {
+      padding-left: 14rem;
+    }
+    @include max-screen(992px) {
+      padding-left: 0;
+    }
   }
 
   .first-subtitle {
-    padding-top: 117px;
+    margin-top: 117px;
     margin-bottom: 86px;
+    @include max-screen(768px) {
+      margin-top: 420px;
+    }
+    @include max-screen(576px) {
+      margin-top: 345px;
+    }
+    @include max-screen(430px) {
+      text-align: center;
+      max-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p {
+      @include title-font(24px, 400);
+      line-height: 120%;
+      text-transform: uppercase;
+    }
   }
 
-  .back-pict {
-    background-image: url("../images/firstpage-back.jpg");
-    background-repeat: no-repeat;
-    //background-position: right;
-    //background-position: 64% 217px;
-    background-position: 355px 135px;
-  }
+  //.back-pict {
+  //  background-image: url("../images/firstpage-back.jpg");
+  //  background-repeat: no-repeat;
+  //  //background-position: right;
+  //  //background-position: 64% 217px;
+  //  background-position: 70% 135px;
+  //}
 }
 
 .equipo-section {
   padding-top: 40px;
   background: linear-gradient(90deg, rgba(146, 146, 146, 0.2) 0%, rgba(255, 255, 255, 0.5) 24.76%);
+  @include max-screen(768px){
+    background: #fff;
+  }
 
   h3 {
     margin-bottom: 30px;
@@ -496,6 +584,7 @@ h3 {
     @extend h3;
     @include max-screen(992px) {
       font-size: 43px;
+      padding-left: 1px;
     }
   }
 
@@ -594,7 +683,8 @@ h3 {
   background: linear-gradient(90deg, rgba(146, 146, 146, 0.2) 0%, rgba(255, 255, 255, 0.5) 24.76%);
   padding: 40px 0;
   @include max-screen(768px){
-    padding: 60px;
+    padding-top: 60px;
+    background: #fff;
   }
 
   .comentarios-unit {
@@ -603,6 +693,10 @@ h3 {
     box-shadow: $shadow;
     @include max-screen(992px) {
       margin-top: 24px;
+    }
+
+    @include max-screen(576px) {
+      padding: 12px 12px 33px;
     }
 
     .stars {

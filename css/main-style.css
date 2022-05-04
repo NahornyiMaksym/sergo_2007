@@ -185,6 +185,48 @@ h6 {
   width: 0%;
   left: 50%; }
 
+.back-img {
+  position: absolute;
+  right: 15%;
+  bottom: 7%;
+  z-index: -1;
+  object-position: left; }
+  @media screen and (max-width: 1400px) {
+    .back-img {
+      bottom: 14%; } }
+  @media screen and (max-width: 1200px) {
+    .back-img {
+      bottom: 15%;
+      right: 10%; } }
+  @media screen and (max-width: 992px) {
+    .back-img {
+      bottom: 15%;
+      right: 5%; } }
+  @media screen and (max-width: 768px) {
+    .back-img {
+      bottom: 170px;
+      right: 0; } }
+  @media screen and (max-width: 576px) {
+    .back-img {
+      width: 300px;
+      bottom: 167px;
+      right: -12px; } }
+  @media screen and (max-width: 430px) {
+    .back-img {
+      max-width: 290px;
+      bottom: 185px;
+      width: 80%;
+      padding-left: 15px;
+      margin-left: -15px; } }
+
+.arrow-down {
+  position: absolute;
+  right: 0;
+  bottom: 100px; }
+  @media screen and (max-width: 768px) {
+    .arrow-down {
+      display: none; } }
+
 h3, .proyectos-section .carousel-title {
   font-weight: bold;
   color: #000;
@@ -197,7 +239,11 @@ h3, .proyectos-section .carousel-title {
       font-size: 24px; } }
 
 .first-banner {
-  padding-top: 82px; }
+  padding-top: 82px;
+  padding-bottom: 100px; }
+  @media screen and (max-width: 430px) {
+    .first-banner {
+      padding-top: 25px; } }
   .first-banner h1 {
     font-weight: 500;
     color: #000;
@@ -206,19 +252,58 @@ h3, .proyectos-section .carousel-title {
     line-height: 92%;
     text-transform: uppercase;
     letter-spacing: 0; }
+    @media screen and (max-width: 1400px) {
+      .first-banner h1 {
+        font-size: 115px; } }
+    @media screen and (max-width: 992px) {
+      .first-banner h1 {
+        font-size: 95px; } }
+    @media screen and (max-width: 768px) {
+      .first-banner h1 {
+        font-size: 65px; } }
+    @media screen and (max-width: 576px) {
+      .first-banner h1 {
+        font-size: 55px; } }
+    @media screen and (max-width: 430px) {
+      .first-banner h1 {
+        font-size: 38px; } }
   .first-banner .add-letter {
     padding-left: 16rem; }
+    @media screen and (max-width: 1400px) {
+      .first-banner .add-letter {
+        padding-left: 14rem; } }
+    @media screen and (max-width: 992px) {
+      .first-banner .add-letter {
+        padding-left: 0; } }
   .first-banner .first-subtitle {
-    padding-top: 117px;
+    margin-top: 117px;
     margin-bottom: 86px; }
-  .first-banner .back-pict {
-    background-image: url("../images/firstpage-back.jpg");
-    background-repeat: no-repeat;
-    background-position: 355px 135px; }
+    @media screen and (max-width: 768px) {
+      .first-banner .first-subtitle {
+        margin-top: 420px; } }
+    @media screen and (max-width: 576px) {
+      .first-banner .first-subtitle {
+        margin-top: 345px; } }
+    @media screen and (max-width: 430px) {
+      .first-banner .first-subtitle {
+        text-align: center;
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto; } }
+    .first-banner .first-subtitle p {
+      font-weight: 400;
+      color: #000;
+      font-size: 24px;
+      font-family: "Oswald", sans-serif;
+      line-height: 120%;
+      text-transform: uppercase; }
 
 .equipo-section {
   padding-top: 40px;
   background: linear-gradient(90deg, rgba(146, 146, 146, 0.2) 0%, rgba(255, 255, 255, 0.5) 24.76%); }
+  @media screen and (max-width: 768px) {
+    .equipo-section {
+      background: #fff; } }
   .equipo-section h3, .equipo-section .proyectos-section .carousel-title, .proyectos-section .equipo-section .carousel-title {
     margin-bottom: 30px; }
   .equipo-section .comment-article {
@@ -370,7 +455,8 @@ h3, .proyectos-section .carousel-title {
         padding-right: 0; } }
   @media screen and (max-width: 992px) {
     .proyectos-section .carousel-title {
-      font-size: 43px; } }
+      font-size: 43px;
+      padding-left: 1px; } }
   .proyectos-section .slide-title {
     position: absolute;
     bottom: 30px;
@@ -453,7 +539,8 @@ h3, .proyectos-section .carousel-title {
   padding: 40px 0; }
   @media screen and (max-width: 768px) {
     .comentarios-section {
-      padding: 60px; } }
+      padding-top: 60px;
+      background: #fff; } }
   .comentarios-section .comentarios-unit {
     padding: 25px 57px 21px;
     border-radius: 20px;
@@ -461,6 +548,9 @@ h3, .proyectos-section .carousel-title {
     @media screen and (max-width: 992px) {
       .comentarios-section .comentarios-unit {
         margin-top: 24px; } }
+    @media screen and (max-width: 576px) {
+      .comentarios-section .comentarios-unit {
+        padding: 12px 12px 33px; } }
     .comentarios-section .comentarios-unit .stars {
       margin-bottom: 35px; }
     .comentarios-section .comentarios-unit .comentarios-txt {
