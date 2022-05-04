@@ -372,6 +372,73 @@ h3 {
   }
 }
 
+.form-section {
+  padding-bottom: 150px;
+
+  form {
+    .form-top {
+      position: relative;
+      padding: 35px 58px 12px 128px;
+      background: #EC9347;
+      .form-title {
+        text-transform: uppercase;
+        @include main-font(30px, 500);
+        color: #fff;
+        line-height: 100%;
+        margin-bottom: 12px;
+        &:before {
+          content: url("../images/form-icon.svg");
+          display: inline-block;
+          position: absolute;
+          left: 58px;
+        }
+
+        .form-body {
+          width: 100%;
+          input {
+            display: block;
+            width: 100%;
+          }
+          label {
+            display: none;
+          }
+        }
+      }
+      .form-sub-title {
+        @include main-font(1rem, 400);
+        opacity: 30%;
+      }
+    }
+  }
+  h3 {
+    margin-bottom: 70px;
+  }
+  .form-sec-txt {
+    @include main-font(24px, 400);
+    line-height: 150%;
+    margin-bottom: 44px;
+  }
+  .giant-unit {
+    background: linear-gradient(180deg, rgba(234, 135, 51, 0.7) 0%, #EA8733 100%);
+    box-shadow: 0.1px 0px 15px -6px #EA8733;
+    margin-bottom: 30px;
+    text-align: center;
+    .giant-numbers {
+      @include title-font(50px, 500);
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .giant-txt {
+      @include main-font(1rem, 500);
+      color: #fff;
+      line-height: 100%;
+      max-width: 168px;
+      margin: auto;
+
+    }
+  }
+}
+
 .equipo-section {
   padding-top: 40px;
   background: linear-gradient(90deg, rgba(146, 146, 146, 0.2) 0%, rgba(255, 255, 255, 0.5) 24.76%);
