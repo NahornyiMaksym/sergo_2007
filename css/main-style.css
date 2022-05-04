@@ -312,12 +312,20 @@ h3, .proyectos-section .carousel-title {
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0.1px 0px 20px -6px rgba(0, 0, 0, 0.25); }
+    @media screen and (max-width: 768px) {
+      .equipo-section article {
+        margin-bottom: 12px;
+        margin-top: 12px;
+        padding: 12px; } }
     .equipo-section article h4 {
       font-weight: 700;
       color: #000;
       font-size: 24px;
       font-family: "Roboto", sans-serif;
       line-height: 150%; }
+      @media screen and (max-width: 768px) {
+        .equipo-section article h4 {
+          font-size: 18px; } }
     .equipo-section article .person-position {
       font-weight: 400;
       color: #000;
@@ -326,26 +334,57 @@ h3, .proyectos-section .carousel-title {
       color: #EA8733;
       line-height: 120%;
       margin-bottom: 50px; }
+      @media screen and (max-width: 768px) {
+        .equipo-section article .person-position {
+          margin-bottom: 24px;
+          font-size: 12px; } }
     .equipo-section article .person-feedback {
       font-weight: 500;
       color: #000;
       font-size: 16px;
       font-family: "Roboto", sans-serif;
       line-height: 150%; }
+      @media screen and (max-width: 768px) {
+        .equipo-section article .person-feedback {
+          font-size: 14px; } }
   .equipo-section .quote-img {
     flex-direction: row;
     align-self: start; }
+    @media screen and (max-width: 768px) {
+      .equipo-section .quote-img {
+        position: absolute;
+        right: -100%;
+        bottom: 0;
+        height: 20%; } }
   .equipo-section .person-img {
     display: flex; }
-  .equipo-section .row {
+    @media screen and (max-width: 768px) {
+      .equipo-section .person-img {
+        position: relative; } }
+  .equipo-section .article-row {
     margin-bottom: 30px; }
+    @media screen and (max-width: 768px) {
+      .equipo-section .article-row {
+        flex-direction: column-reverse; } }
+  @media screen and (max-width: 768px) {
+    .equipo-section .team-photo-div {
+      margin-left: -12px;
+      margin-right: -12px; } }
 
 .geografia-section {
   padding-top: 150px;
   margin-bottom: 90px; }
+  @media screen and (max-width: 768px) {
+    .geografia-section {
+      padding-top: 60px;
+      margin-bottom: 0px; } }
   .geografia-section h3, .geografia-section .proyectos-section .carousel-title, .proyectos-section .geografia-section .carousel-title {
     margin-top: 115px;
     margin-bottom: 70px; }
+    @media screen and (max-width: 768px) {
+      .geografia-section h3, .geografia-section .proyectos-section .carousel-title, .proyectos-section .geografia-section .carousel-title {
+        margin-top: 0;
+        margin-bottom: 24px; } }
 
 .m-width-425 {
   max-width: 425px; }

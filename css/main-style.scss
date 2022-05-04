@@ -399,10 +399,18 @@ h3 {
     padding: 30px;
     border-radius: 20px;
     box-shadow: $shadow;
+    @include max-screen(768px){
+      margin-bottom: 12px;
+      margin-top: 12px;
+      padding: 12px;
+    }
 
     h4 {
       @include main-font(24px, 700);
       line-height: 150%;
+      @include max-screen(768px){
+        font-size: 18px;
+      }
     }
 
     .person-position {
@@ -410,25 +418,50 @@ h3 {
       color: #EA8733;
       line-height: 120%;
       margin-bottom: 50px;
+      @include max-screen(768px){
+        margin-bottom: 24px;
+        font-size: 12px;
+      }
     }
 
     .person-feedback {
       @include main-font(16px, 500);
       line-height: 150%;
+      @include max-screen(768px){
+        font-size: 14px;
+      }
     }
   }
 
   .quote-img {
     flex-direction: row;
     align-self: start;
+    @include max-screen(768px){
+      position: absolute;
+      right: -100%;
+      bottom: 0;
+      height: 20%;
+    }
   }
 
   .person-img {
     display: flex;
+    @include max-screen(768px){
+      position: relative;
+    }
   }
 
-  .row {
+  .article-row {
     margin-bottom: 30px;
+    @include max-screen(768px){
+      flex-direction: column-reverse;
+    }
+  }
+  .team-photo-div{
+    @include max-screen(768px){
+      margin-left: -12px;
+      margin-right: -12px;
+    }
   }
 
   //.container{
@@ -441,10 +474,18 @@ h3 {
 .geografia-section {
   padding-top: 150px;
   margin-bottom: 90px;
+  @include max-screen(768px){
+    padding-top: 60px;
+    margin-bottom: 0px;
+  }
 
   h3 {
     margin-top: 115px;
     margin-bottom: 70px;
+    @include max-screen(768px){
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
   }
 }
 
