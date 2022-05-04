@@ -257,6 +257,7 @@ h6 {
   width: 0%;
   left: 50%;
 }
+
 .back-img {
   position: absolute;
   right: 15%;
@@ -275,12 +276,12 @@ h6 {
     right: 5%;
   }
   @include max-screen(768px) {
-    bottom: 170px;
+    bottom: 164px;
     right: 0;
   }
   @include max-screen(576px) {
     width: 300px;
-    bottom: 167px;
+    bottom: 155px;
     right: -12px;
   }
   @include max-screen(430px) {
@@ -296,11 +297,12 @@ h6 {
 .arrow-down {
   position: absolute;
   right: 0;
-  bottom: 100px;
+  bottom: 145px;
   @include max-screen(768px) {
     display: none;
   }
 }
+
 h3 {
   @include title-font(56px, bold,);
   @include txt-upper;
@@ -313,7 +315,10 @@ h3 {
 .first-banner {
   overflow-x: hidden;
   padding-top: 82px;
-  padding-bottom: 100px;
+  padding-bottom: 64px;
+  @include max-screen(1400px) {
+    padding-bottom: 35px;
+  }
   @include max-screen(430px) {
     padding-top: 25px;
   }
@@ -354,17 +359,19 @@ h3 {
     margin-top: 117px;
     margin-bottom: 86px;
     @include max-screen(768px) {
-      margin-top: 420px;
+      margin-top: 385px;
     }
     @include max-screen(576px) {
-      margin-top: 345px;
+      margin-top: 310px;
     }
     @include max-screen(430px) {
       text-align: center;
       max-width: 50%;
       margin-left: auto;
       margin-right: auto;
+      margin-top: 320px;
     }
+
     p {
       @include title-font(24px, 400);
       line-height: 120%;
@@ -376,29 +383,70 @@ h3 {
 .form-section {
   padding-bottom: 150px;
 
+  .col-revers {
+    @include max-screen(992px) {
+      flex-direction: column-reverse;
+    }
+  }
+
   form {
+    max-width: 425px;
+    position: relative;
+    bottom: 162px;
+    @include max-screen(992px) {
+      margin: auto;
+      bottom: 60px;
+    }
+    @include max-screen(992px) {
+      bottom: 80px;
+    }
+
     .form-top {
       position: relative;
       padding: 35px 58px 12px 128px;
       background: #EC9347;
+      @include max-screen(1400px) {
+        padding-left: 105px;
+      }
+      @include max-screen(430px) {
+        padding: 15px 10px 8px 103px;
+      }
+
       .form-title {
         text-transform: uppercase;
         @include main-font(30px, 500);
         color: #fff;
         line-height: 100%;
         margin-bottom: 12px;
+        @include max-screen(430px) {
+          font-size: 24px;
+          margin-bottom: 4px;
+        }
         &:before {
           content: url("../images/form-icon.svg");
           display: inline-block;
           position: absolute;
           left: 58px;
+          @include max-screen(1400px) {
+            left: 45px;
+          }
+          @include max-screen(430px) {
+            left: 50px;
+            content: url("../images/form-adapt-icon.svg");
+          }
         }
       }
+
       .form-sub-title {
+        margin-bottom: 0;
         @include main-font(1rem, 400);
         opacity: 30%;
+        @include max-screen(430px) {
+          fnot-size: 14px;
+        }
       }
     }
+
     .form-body {
       box-shadow: $shadow;
       padding: 0 38px 38px;
@@ -408,12 +456,16 @@ h3 {
         width: 100%;
         @extend .form-sub-title;
         border: none;
-        border-bottom: 1px solid rgba(0,0,0,0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
         padding-top: 26px;
         padding-bottom: 16px;
         margin-bottom: 10px;
+        @include max-screen(430px) {
+          fnot-size: 14px;
+        }
         //margin-top: 10px;
       }
+
       label {
         display: none;
       }
@@ -427,30 +479,38 @@ h3 {
         text-align: center;
         background: #000;
         border-radius: 28px;
-        margin-top: 41px;
+        margin-top: 60px;
         border: none;
         text-transform: uppercase;
+        @include max-screen(430px) {
+          fnot-size: 14px;
+        }
       }
     }
   }
+
   h3 {
     margin-bottom: 70px;
   }
+
   .form-sec-txt {
     @include main-font(24px, 400);
     line-height: 150%;
     margin-bottom: 44px;
   }
+
   .giant-unit {
     background: linear-gradient(180deg, rgba(234, 135, 51, 0.7) 0%, #EA8733 100%);
     box-shadow: 0.1px 0px 15px -6px #EA8733;
     margin-bottom: 30px;
     text-align: center;
+
     .giant-numbers {
       @include title-font(50px, 500);
       color: #fff;
       margin-bottom: 12px;
     }
+
     .giant-txt {
       @include main-font(1rem, 500);
       color: #fff;
@@ -465,7 +525,7 @@ h3 {
 .equipo-section {
   padding-top: 40px;
   background: linear-gradient(90deg, rgba(146, 146, 146, 0.2) 0%, rgba(255, 255, 255, 0.5) 24.76%);
-  @include max-screen(768px){
+  @include max-screen(768px) {
     background: #fff;
   }
 
@@ -481,7 +541,7 @@ h3 {
     padding: 30px;
     border-radius: 20px;
     box-shadow: $shadow;
-    @include max-screen(768px){
+    @include max-screen(768px) {
       margin-bottom: 12px;
       margin-top: 12px;
       padding: 12px;
@@ -490,7 +550,7 @@ h3 {
     h4 {
       @include main-font(24px, 700);
       line-height: 150%;
-      @include max-screen(768px){
+      @include max-screen(768px) {
         font-size: 18px;
       }
     }
@@ -500,7 +560,7 @@ h3 {
       color: #EA8733;
       line-height: 120%;
       margin-bottom: 50px;
-      @include max-screen(768px){
+      @include max-screen(768px) {
         margin-bottom: 24px;
         font-size: 12px;
       }
@@ -509,7 +569,7 @@ h3 {
     .person-feedback {
       @include main-font(16px, 500);
       line-height: 150%;
-      @include max-screen(768px){
+      @include max-screen(768px) {
         font-size: 14px;
       }
     }
@@ -518,7 +578,7 @@ h3 {
   .quote-img {
     flex-direction: row;
     align-self: start;
-    @include max-screen(768px){
+    @include max-screen(768px) {
       position: absolute;
       right: -100%;
       bottom: 0;
@@ -528,19 +588,20 @@ h3 {
 
   .person-img {
     display: flex;
-    @include max-screen(768px){
+    @include max-screen(768px) {
       position: relative;
     }
   }
 
   .article-row {
     margin-bottom: 30px;
-    @include max-screen(768px){
+    @include max-screen(768px) {
       flex-direction: column-reverse;
     }
   }
-  .team-photo-div{
-    @include max-screen(768px){
+
+  .team-photo-div {
+    @include max-screen(768px) {
       margin-left: -12px;
       margin-right: -12px;
     }
@@ -556,7 +617,7 @@ h3 {
 .geografia-section {
   padding-top: 150px;
   margin-bottom: 90px;
-  @include max-screen(768px){
+  @include max-screen(768px) {
     padding-top: 60px;
     margin-bottom: 0px;
   }
@@ -564,7 +625,7 @@ h3 {
   h3 {
     margin-top: 115px;
     margin-bottom: 70px;
-    @include max-screen(768px){
+    @include max-screen(768px) {
       margin-top: 0;
       margin-bottom: 24px;
     }
@@ -583,7 +644,7 @@ h3 {
 
 .servicios-section {
   padding-bottom: 150px;
-  @include max-screen(768px){
+  @include max-screen(768px) {
     padding-bottom: 60px;
   }
 
@@ -686,16 +747,19 @@ h3 {
     }
   }
 }
+
 .owl-dots {
   display: none;
 }
 
 .proyectos-section {
+  overflow-x: hidden;
   position: relative;
   padding: 150px 0;
-  @include max-screen(992px){
+  @include max-screen(992px) {
     padding: 60px 0;
   }
+
   .col-xl-7.col-md-8 {
     padding-right: 15px;
     @include max-screen(576px) {
@@ -745,6 +809,7 @@ h3 {
       position: relative;
       display: block;
       width: 50%;
+
       &:first-child {
         &:before {
           display: inline-block;
@@ -756,10 +821,10 @@ h3 {
           position: absolute;
           right: 33%;
           top: 20px;
-          @include max-screen(576px){
+          @include max-screen(576px) {
             right: 43%;
           }
-          @include max-screen(420px){
+          @include max-screen(420px) {
             right: 44%;
             top: 12px;
             font-size: 12px;
@@ -768,6 +833,7 @@ h3 {
           }
         }
       }
+
       &:last-child {
         &:before {
           display: inline-block;
@@ -779,10 +845,10 @@ h3 {
           position: absolute;
           right: 33%;
           top: 20px;
-          @include max-screen(576px){
+          @include max-screen(576px) {
             right: 43%;
           }
-          @include max-screen(420px){
+          @include max-screen(420px) {
             right: 44%;
             top: 12px;
             font-size: 12px;
@@ -791,6 +857,7 @@ h3 {
           }
         }
       }
+
       @include max-screen(576px) {
         width: 100%;
       }
@@ -852,7 +919,7 @@ h3 {
 .comentarios-section {
   background: linear-gradient(90deg, rgba(146, 146, 146, 0.2) 0%, rgba(255, 255, 255, 0.5) 24.76%);
   padding: 40px 0;
-  @include max-screen(768px){
+  @include max-screen(768px) {
     padding-top: 60px;
     background: #fff;
   }
@@ -923,7 +990,7 @@ footer {
   }
 
   padding-top: 74px;
-  @include max-screen(768px){
+  @include max-screen(768px) {
     padding-top: 48px;
   }
 

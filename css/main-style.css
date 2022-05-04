@@ -205,12 +205,12 @@ h6 {
       right: 5%; } }
   @media screen and (max-width: 768px) {
     .back-img {
-      bottom: 170px;
+      bottom: 164px;
       right: 0; } }
   @media screen and (max-width: 576px) {
     .back-img {
       width: 300px;
-      bottom: 167px;
+      bottom: 155px;
       right: -12px; } }
   @media screen and (max-width: 430px) {
     .back-img {
@@ -223,7 +223,7 @@ h6 {
 .arrow-down {
   position: absolute;
   right: 0;
-  bottom: 100px; }
+  bottom: 145px; }
   @media screen and (max-width: 768px) {
     .arrow-down {
       display: none; } }
@@ -242,7 +242,10 @@ h3, .proyectos-section .carousel-title {
 .first-banner {
   overflow-x: hidden;
   padding-top: 82px;
-  padding-bottom: 100px; }
+  padding-bottom: 64px; }
+  @media screen and (max-width: 1400px) {
+    .first-banner {
+      padding-bottom: 35px; } }
   @media screen and (max-width: 430px) {
     .first-banner {
       padding-top: 25px; } }
@@ -282,16 +285,17 @@ h3, .proyectos-section .carousel-title {
     margin-bottom: 86px; }
     @media screen and (max-width: 768px) {
       .first-banner .first-subtitle {
-        margin-top: 420px; } }
+        margin-top: 385px; } }
     @media screen and (max-width: 576px) {
       .first-banner .first-subtitle {
-        margin-top: 345px; } }
+        margin-top: 310px; } }
     @media screen and (max-width: 430px) {
       .first-banner .first-subtitle {
         text-align: center;
         max-width: 50%;
         margin-left: auto;
-        margin-right: auto; } }
+        margin-right: auto;
+        margin-top: 320px; } }
     .first-banner .first-subtitle p {
       font-weight: 400;
       color: #000;
@@ -302,58 +306,99 @@ h3, .proyectos-section .carousel-title {
 
 .form-section {
   padding-bottom: 150px; }
-  .form-section form .form-top {
+  @media screen and (max-width: 992px) {
+    .form-section .col-revers {
+      flex-direction: column-reverse; } }
+  .form-section form {
+    max-width: 425px;
     position: relative;
-    padding: 35px 58px 12px 128px;
-    background: #EC9347; }
-    .form-section form .form-top .form-title {
-      text-transform: uppercase;
-      font-weight: 500;
-      color: #000;
-      font-size: 30px;
-      font-family: "Roboto", sans-serif;
-      color: #fff;
-      line-height: 100%;
-      margin-bottom: 12px; }
-      .form-section form .form-top .form-title:before {
-        content: url("../images/form-icon.svg");
-        display: inline-block;
-        position: absolute;
-        left: 58px; }
-    .form-section form .form-top .form-sub-title, .form-section form .form-top .form-body input, .form-section form .form-body .form-top input {
-      font-weight: 400;
-      color: #000;
-      font-size: 1rem;
-      font-family: "Roboto", sans-serif;
-      opacity: 30%; }
-  .form-section form .form-body {
-    box-shadow: 0.1px 0px 20px -6px rgba(0, 0, 0, 0.25);
-    padding: 0 38px 38px; }
-    .form-section form .form-body input {
-      display: block;
-      width: 100%;
-      border: none;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-      padding-top: 26px;
-      padding-bottom: 16px;
-      margin-bottom: 10px; }
-    .form-section form .form-body label {
-      display: none; }
-    .form-section form .form-body button {
-      display: block;
-      width: 100%;
-      padding: 16px 0;
-      font-weight: 500;
-      color: #000;
-      font-size: 1rem;
-      font-family: "Oswald", sans-serif;
-      color: #fff;
-      text-align: center;
-      background: #000;
-      border-radius: 28px;
-      margin-top: 41px;
-      border: none;
-      text-transform: uppercase; }
+    bottom: 162px; }
+    @media screen and (max-width: 992px) {
+      .form-section form {
+        margin: auto;
+        bottom: 60px; } }
+    @media screen and (max-width: 992px) {
+      .form-section form {
+        bottom: 80px; } }
+    .form-section form .form-top {
+      position: relative;
+      padding: 35px 58px 12px 128px;
+      background: #EC9347; }
+      @media screen and (max-width: 1400px) {
+        .form-section form .form-top {
+          padding-left: 105px; } }
+      @media screen and (max-width: 430px) {
+        .form-section form .form-top {
+          padding: 15px 10px 8px 103px; } }
+      .form-section form .form-top .form-title {
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #000;
+        font-size: 30px;
+        font-family: "Roboto", sans-serif;
+        color: #fff;
+        line-height: 100%;
+        margin-bottom: 12px; }
+        @media screen and (max-width: 430px) {
+          .form-section form .form-top .form-title {
+            font-size: 24px;
+            margin-bottom: 4px; } }
+        .form-section form .form-top .form-title:before {
+          content: url("../images/form-icon.svg");
+          display: inline-block;
+          position: absolute;
+          left: 58px; }
+          @media screen and (max-width: 1400px) {
+            .form-section form .form-top .form-title:before {
+              left: 45px; } }
+          @media screen and (max-width: 430px) {
+            .form-section form .form-top .form-title:before {
+              left: 50px;
+              content: url("../images/form-adapt-icon.svg"); } }
+      .form-section form .form-top .form-sub-title, .form-section form .form-top .form-body input, .form-section form .form-body .form-top input {
+        margin-bottom: 0;
+        font-weight: 400;
+        color: #000;
+        font-size: 1rem;
+        font-family: "Roboto", sans-serif;
+        opacity: 30%; }
+        @media screen and (max-width: 430px) {
+          .form-section form .form-top .form-sub-title, .form-section form .form-top .form-body input, .form-section form .form-body .form-top input {
+            fnot-size: 14px; } }
+    .form-section form .form-body {
+      box-shadow: 0.1px 0px 20px -6px rgba(0, 0, 0, 0.25);
+      padding: 0 38px 38px; }
+      .form-section form .form-body input {
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        padding-top: 26px;
+        padding-bottom: 16px;
+        margin-bottom: 10px; }
+        @media screen and (max-width: 430px) {
+          .form-section form .form-body input {
+            fnot-size: 14px; } }
+      .form-section form .form-body label {
+        display: none; }
+      .form-section form .form-body button {
+        display: block;
+        width: 100%;
+        padding: 16px 0;
+        font-weight: 500;
+        color: #000;
+        font-size: 1rem;
+        font-family: "Oswald", sans-serif;
+        color: #fff;
+        text-align: center;
+        background: #000;
+        border-radius: 28px;
+        margin-top: 60px;
+        border: none;
+        text-transform: uppercase; }
+        @media screen and (max-width: 430px) {
+          .form-section form .form-body button {
+            fnot-size: 14px; } }
   .form-section h3, .form-section .proyectos-section .carousel-title, .proyectos-section .form-section .carousel-title {
     margin-bottom: 70px; }
   .form-section .form-sec-txt {
@@ -569,6 +614,7 @@ h3, .proyectos-section .carousel-title {
   display: none; }
 
 .proyectos-section {
+  overflow-x: hidden;
   position: relative;
   padding: 150px 0; }
   @media screen and (max-width: 992px) {
