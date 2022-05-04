@@ -240,6 +240,7 @@ h3, .proyectos-section .carousel-title {
       font-size: 24px; } }
 
 .first-banner {
+  overflow-x: hidden;
   padding-top: 82px;
   padding-bottom: 100px; }
   @media screen and (max-width: 430px) {
@@ -326,6 +327,7 @@ h3, .proyectos-section .carousel-title {
       font-family: "Roboto", sans-serif;
       opacity: 30%; }
   .form-section form .form-body {
+    box-shadow: 0.1px 0px 20px -6px rgba(0, 0, 0, 0.25);
     padding: 0 38px 38px; }
     .form-section form .form-body input {
       display: block;
@@ -337,6 +339,21 @@ h3, .proyectos-section .carousel-title {
       margin-bottom: 10px; }
     .form-section form .form-body label {
       display: none; }
+    .form-section form .form-body button {
+      display: block;
+      width: 100%;
+      padding: 16px 0;
+      font-weight: 500;
+      color: #000;
+      font-size: 1rem;
+      font-family: "Oswald", sans-serif;
+      color: #fff;
+      text-align: center;
+      background: #000;
+      border-radius: 28px;
+      margin-top: 41px;
+      border: none;
+      text-transform: uppercase; }
   .form-section h3, .form-section .proyectos-section .carousel-title, .proyectos-section .form-section .carousel-title {
     margin-bottom: 70px; }
   .form-section .form-sec-txt {
