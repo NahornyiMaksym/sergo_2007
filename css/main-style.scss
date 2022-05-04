@@ -392,21 +392,22 @@ h3 {
           position: absolute;
           left: 58px;
         }
-
-        .form-body {
-          width: 100%;
-          input {
-            display: block;
-            width: 100%;
-          }
-          label {
-            display: none;
-          }
-        }
       }
       .form-sub-title {
         @include main-font(1rem, 400);
         opacity: 30%;
+      }
+    }
+    .form-body {
+      padding: 0 38px 38px;
+      input {
+        display: block;
+        width: 100%;
+        @extend .form-sub-title;
+        border: none;
+      }
+      label {
+        display: none;
       }
     }
   }
