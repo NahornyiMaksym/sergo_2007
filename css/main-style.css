@@ -1,4 +1,5 @@
 @import url(bootstrap.min.css);
+@import url(main-style.css);
 * {
   margin: 0;
   padding: 0; }
@@ -184,7 +185,7 @@ h6 {
   width: 0%;
   left: 50%; }
 
-h3 {
+h3, .proyectos-section .carousel-title {
   font-weight: bold;
   color: #000;
   font-size: 56px;
@@ -192,7 +193,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 2px; }
   @media screen and (max-width: 575px) {
-    h3 {
+    h3, .proyectos-section .carousel-title {
       font-size: 24px; } }
 
 .first-banner {
@@ -218,7 +219,7 @@ h3 {
 .equipo-section {
   padding-top: 40px;
   background: linear-gradient(90deg, rgba(146, 146, 146, 0.2) 0%, rgba(255, 255, 255, 0.5) 24.76%); }
-  .equipo-section h3 {
+  .equipo-section h3, .equipo-section .proyectos-section .carousel-title, .proyectos-section .equipo-section .carousel-title {
     margin-bottom: 30px; }
   .equipo-section .comment-article {
     align-self: center; }
@@ -257,7 +258,7 @@ h3 {
 .geografia-section {
   padding-top: 150px;
   margin-bottom: 90px; }
-  .geografia-section h3 {
+  .geografia-section h3, .geografia-section .proyectos-section .carousel-title, .proyectos-section .geografia-section .carousel-title {
     margin-top: 115px;
     margin-bottom: 70px; }
 
@@ -270,10 +271,13 @@ h3 {
 
 .servicios-section {
   padding-bottom: 150px; }
-  .servicios-section h3 {
+  @media screen and (max-width: 768px) {
+    .servicios-section {
+      padding-bottom: 60px; } }
+  .servicios-section h3, .servicios-section .proyectos-section .carousel-title, .proyectos-section .servicios-section .carousel-title {
     margin-bottom: 70px; }
     @media screen and (max-width: 575px) {
-      .servicios-section h3 {
+      .servicios-section h3, .servicios-section .proyectos-section .carousel-title, .proyectos-section .servicios-section .carousel-title {
         max-width: 80vw;
         margin-bottom: 24px; } }
   .servicios-section .service-unit {
@@ -311,11 +315,12 @@ h3 {
   padding-bottom: 28px; }
   @media screen and (max-width: 768px) {
     .ventajas-section {
-      background: #fff; } }
-  .ventajas-section h3 {
+      background: #fff;
+      padding-bottom: 0; } }
+  .ventajas-section h3, .ventajas-section .proyectos-section .carousel-title, .proyectos-section .ventajas-section .carousel-title {
     margin: 40px 0 70px 0; }
     @media screen and (max-width: 575px) {
-      .ventajas-section h3 {
+      .ventajas-section h3, .ventajas-section .proyectos-section .carousel-title, .proyectos-section .ventajas-section .carousel-title {
         margin-bottom: 24px; } }
   @media screen and (max-width: 575px) {
     .ventajas-section .ventajas-unit:nth-child(-n+3) {
@@ -349,9 +354,106 @@ h3 {
     .ventajas-section .ventajas-img {
       margin-top: 0; } }
 
+.owl-dots {
+  display: none; }
+
+.proyectos-section {
+  position: relative;
+  padding: 150px 0; }
+  @media screen and (max-width: 992px) {
+    .proyectos-section {
+      padding: 60px 0; } }
+  .proyectos-section .col-xl-7.col-md-8 {
+    padding-right: 15px; }
+    @media screen and (max-width: 576px) {
+      .proyectos-section .col-xl-7.col-md-8 {
+        padding-right: 0; } }
+  @media screen and (max-width: 992px) {
+    .proyectos-section .carousel-title {
+      font-size: 43px; } }
+  .proyectos-section .slide-title {
+    position: absolute;
+    bottom: 30px;
+    left: 104px;
+    max-width: 30%;
+    font-weight: bold;
+    color: #000;
+    font-size: 34px;
+    font-family: "Roboto", sans-serif; }
+    @media screen and (max-width: 1400px) {
+      .proyectos-section .slide-title {
+        font-size: 30px; } }
+    @media screen and (max-width: 1200px) {
+      .proyectos-section .slide-title {
+        left: 0; } }
+    @media screen and (max-width: 992px) {
+      .proyectos-section .slide-title {
+        font-size: 23px; } }
+    @media screen and (max-width: 768px) {
+      .proyectos-section .slide-title {
+        position: static;
+        max-width: 100%;
+        margin-top: 10px; } }
+  .proyectos-section .double-img {
+    display: flex; }
+    @media screen and (max-width: 576px) {
+      .proyectos-section .double-img {
+        flex-direction: column;
+        padding: 0 12px;
+        margin: 0 -12px; } }
+    .proyectos-section .double-img picture {
+      display: block;
+      width: 50%; }
+      @media screen and (max-width: 576px) {
+        .proyectos-section .double-img picture {
+          width: 100%; } }
+
+.owl-nav {
+  position: relative;
+  left: 105px;
+  bottom: 20px; }
+  @media screen and (max-width: 1200px) {
+    .owl-nav {
+      left: 0; } }
+  @media screen and (max-width: 1200px) {
+    .owl-nav {
+      top: -25px; } }
+  @media screen and (max-width: 768px) {
+    .owl-nav {
+      top: 0; } }
+  .owl-nav .owl-prev {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/arrow-back.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: transparent; }
+    @media screen and (max-width: 768px) {
+      .owl-nav .owl-prev {
+        background-image: url("../images/arrow-adapt-prev.svg");
+        position: absolute;
+        left: 25%; } }
+  .owl-nav .owl-next {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/arrow-next.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: auto; }
+    @media screen and (max-width: 768px) {
+      .owl-nav .owl-next {
+        background-image: url("../images/arrow-adapt-next.svg");
+        position: absolute;
+        right: 25%; } }
+
 .comentarios-section {
   background: linear-gradient(90deg, rgba(146, 146, 146, 0.2) 0%, rgba(255, 255, 255, 0.5) 24.76%);
   padding: 40px 0; }
+  @media screen and (max-width: 768px) {
+    .comentarios-section {
+      padding: 60px; } }
   .comentarios-section .comentarios-unit {
     padding: 25px 57px 21px;
     border-radius: 20px;
@@ -406,6 +508,9 @@ footer {
   padding-top: 74px; }
   footer .container-fluid {
     margin: 0 -12px; }
+  @media screen and (max-width: 768px) {
+    footer {
+      padding-top: 48px; } }
   footer a {
     display: block;
     max-width: 76px;

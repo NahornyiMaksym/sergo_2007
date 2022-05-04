@@ -5,6 +5,11 @@
 
 @import "bootstrap.min.css";
 
+//@import "owl.carousel.min.css";
+//@import "owl.theme.default.min.css";
+
+@import "main-style.css";
+
 
 $title-font: 'Oswald', sans-serif;
 $main-font: 'Roboto', sans-serif;
@@ -39,7 +44,8 @@ $shadow: 0.1px 0px 20px -6px rgba(0, 0, 0, 0.25);
 a {
   text-decoration: none;
   display: inline-block;
-  &:hover{
+
+  &:hover {
     color: $font-color;
   }
 }
@@ -84,23 +90,24 @@ a {
 }
 
 .navbar-light {
-  .navbar-toggler{
+  .navbar-toggler {
     border: none;
     color: transparent;
   }
 }
+
 .number {
   margin-left: 34px;
   @include title-font(1rem, 500);
   vertical-align: middle;
-  @include max-screen(430px){
+  @include max-screen(430px) {
     display: none;
   }
 }
 
 .logo-number {
 
-  @include max-screen(350px){
+  @include max-screen(350px) {
     display: flex;
     flex-direction: column;
   }
@@ -139,10 +146,10 @@ h6 {
   @include main-font(1rem, bold);
   color: $font-color;
   margin-bottom: 0;
-  @include max-screen(768px){
+  @include max-screen(768px) {
     font-size: 15px;
   }
-  @include max-screen(575px){
+  @include max-screen(575px) {
     font-size: 12px;
   }
 }
@@ -250,11 +257,12 @@ h6 {
   width: 0%;
   left: 50%;
 }
-h3{
-  @include title-font(56px,bold,);
+
+h3 {
+  @include title-font(56px, bold,);
   @include txt-upper;
   letter-spacing: 2px;
-  @include max-screen(575px){
+  @include max-screen(575px) {
     font-size: 24px;
   }
 }
@@ -277,6 +285,7 @@ h3{
     padding-top: 117px;
     margin-bottom: 86px;
   }
+
   .back-pict {
     background-image: url("../images/firstpage-back.jpg");
     background-repeat: no-repeat;
@@ -285,82 +294,99 @@ h3{
     background-position: 355px 135px;
   }
 }
-.equipo-section{
+
+.equipo-section {
   padding-top: 40px;
   background: linear-gradient(90deg, rgba(146, 146, 146, 0.2) 0%, rgba(255, 255, 255, 0.5) 24.76%);
-  h3{
+
+  h3 {
     margin-bottom: 30px;
   }
-  .comment-article{
+
+  .comment-article {
     align-self: center;
   }
-  article{
+
+  article {
     padding: 30px;
     border-radius: 20px;
     box-shadow: $shadow;
-    h4{
-      @include main-font(24px,700);
+
+    h4 {
+      @include main-font(24px, 700);
       line-height: 150%;
     }
-    .person-position{
-      @include main-font(14px,400);
+
+    .person-position {
+      @include main-font(14px, 400);
       color: #EA8733;
       line-height: 120%;
       margin-bottom: 50px;
     }
-    .person-feedback{
-      @include main-font(16px,500);
+
+    .person-feedback {
+      @include main-font(16px, 500);
       line-height: 150%;
     }
   }
-  .quote-img{
+
+  .quote-img {
     flex-direction: row;
     align-self: start;
   }
-  .person-img{
+
+  .person-img {
     display: flex;
   }
-  .row{
+
+  .row {
     margin-bottom: 30px;
   }
-//.container{
-//  background-image: url("../images/team.jpg");
-//  background-repeat: no-repeat;
-//  background-size: cover;
-//}
+
+  //.container{
+  //  background-image: url("../images/team.jpg");
+  //  background-repeat: no-repeat;
+  //  background-size: cover;
+  //}
 }
 
-.geografia-section{
+.geografia-section {
   padding-top: 150px;
   margin-bottom: 90px;
-  h3{
+
+  h3 {
     margin-top: 115px;
     margin-bottom: 70px;
   }
 }
+
 .m-width-425 {
   max-width: 425px;
 }
 
 .serv-img {
-  @include max-screen(1200px){
+  @include max-screen(1200px) {
     order: 1;
   }
 }
 
 .servicios-section {
   padding-bottom: 150px;
+  @include max-screen(768px){
+    padding-bottom: 60px;
+  }
 
   h3 {
     margin-bottom: 70px;
-    @include max-screen(575px){
+    @include max-screen(575px) {
       max-width: 80vw;
       margin-bottom: 24px;
     }
   }
+
   .service-unit {
     margin-bottom: 27px;
-    @include max-screen(768px){
+    @include max-screen(768px) {
       margin-bottom: 12px;
     }
 
@@ -370,7 +396,7 @@ h3{
     border-radius: 8px;
     box-shadow: $shadow;
     padding: 16px 45px 16px 30px;
-    @include max-screen(768px){
+    @include max-screen(768px) {
       flex-direction: column;
       min-height: 62px;
       padding: 5px 0 5px 5px;
@@ -380,7 +406,7 @@ h3{
     span {
       display: block;
       @include main-font(1.5rem, bold);
-      @include max-screen(575px){
+      @include max-screen(575px) {
         font-size: 18px;
         line-height: normal;
       }
@@ -391,31 +417,36 @@ h3{
 }
 
 
-
 .ventajas-section {
   background: linear-gradient(90deg, rgba(146, 146, 146, 0.2) 0%, rgba(255, 255, 255, 0.5) 24.76%);
   padding-bottom: 28px;
-  @include max-screen(768px){
+  @include max-screen(768px) {
     background: #fff;
+    padding-bottom: 0;
   }
+
   h3 {
     margin: 40px 0 70px 0;
-    @include max-screen(575px){
+    @include max-screen(575px) {
       margin-bottom: 24px;
     }
   }
+
   .ventajas-unit {
-    &:nth-child(-n+3){
-      @include max-screen(575px){
+    &:nth-child(-n+3) {
+      @include max-screen(575px) {
         display: none;
       }
     }
-    @include max-screen(575px){
+
+    @include max-screen(575px) {
       margin-bottom: 24px;
     }
+
     &:first-child {
       margin-bottom: 50px;
     }
+
     p {
       @include main-font(0.9rem, 400);
       opacity: 0.6;
@@ -428,66 +459,191 @@ h3{
       margin-bottom: 3px;
     }
   }
+
   .ventajas-img {
-    @include max-screen(1400px){
+    @include max-screen(1400px) {
       margin-top: 93px;
     }
-    @include max-screen(1200px){
+    @include max-screen(1200px) {
       margin-top: 225px;
     }
-    @include max-screen(992px){
+    @include max-screen(992px) {
       margin-top: 50px;
     }
-    @include max-screen(575px){
+    @include max-screen(575px) {
       margin-top: 0;
     }
   }
 }
+.owl-dots {
+  display: none;
+}
+
+.proyectos-section {
+  position: relative;
+  padding: 150px 0;
+  @include max-screen(992px){
+    padding: 60px 0;
+  }
+  .col-xl-7.col-md-8 {
+    padding-right: 15px;
+    @include max-screen(576px) {
+      padding-right: 0;
+    }
+  }
+
+  .carousel-title {
+    @extend h3;
+    @include max-screen(992px) {
+      font-size: 43px;
+    }
+  }
+
+  .slide-title {
+    position: absolute;
+    bottom: 30px;
+    left: 104px;
+    max-width: 30%;
+    @include main-font(34px, bold);
+    @include max-screen(1400px) {
+      font-size: 30px;
+    }
+    @include max-screen(1200px) {
+      left: 0;
+    }
+    @include max-screen(992px) {
+      font-size: 23px;
+    }
+    @include max-screen(768px) {
+      position: static;
+      max-width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  .double-img {
+    display: flex;
+    @include max-screen(576px) {
+      flex-direction: column;
+      padding: 0 12px;
+      margin: 0 -12px;
+    }
+
+    picture {
+      display: block;
+      width: 50%;
+      @include max-screen(576px) {
+        width: 100%;
+      }
+
+    }
+  }
+}
+
+
+.owl-nav {
+  position: relative;
+  left: 105px;
+  bottom: 20px;
+  @include max-screen(1200px) {
+    left: 0;
+  }
+  @include max-screen(1200px) {
+    top: -25px;
+  }
+  @include max-screen(768px) {
+    top: 0;
+  }
+  //@include max-screen(576px) {
+  //  top: -20px;
+  //}
+
+  .owl-prev {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/arrow-back.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: transparent;
+    @include max-screen(768px) {
+      background-image: url("../images/arrow-adapt-prev.svg");
+      position: absolute;
+      left: 25%;
+    }
+  }
+
+  .owl-next {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/arrow-next.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: auto;
+    @include max-screen(768px) {
+      background-image: url("../images/arrow-adapt-next.svg");
+      position: absolute;
+      right: 25%;
+    }
+  }
+}
+
 
 .comentarios-section {
   background: linear-gradient(90deg, rgba(146, 146, 146, 0.2) 0%, rgba(255, 255, 255, 0.5) 24.76%);
   padding: 40px 0;
+  @include max-screen(768px){
+    padding: 60px;
+  }
+
   .comentarios-unit {
     padding: 25px 57px 21px;
     border-radius: 20px;
     box-shadow: $shadow;
-    @include max-screen(992px){
+    @include max-screen(992px) {
       margin-top: 24px;
     }
+
     .stars {
       margin-bottom: 35px;
     }
+
     .comentarios-txt {
       @include main-font(1rem, 400);
-      @include max-screen(768px){
+      @include max-screen(768px) {
         font-size: 14px;
       }
       margin-bottom: 20px;
     }
+
     .comentarios-author {
       display: flex;
+
       img {
         margin-right: 14px;
         width: 100px;
         height: 100px;
         border-radius: 50px;
         overflow: hidden;
-        @include max-screen(768px){
+        @include max-screen(768px) {
           width: 62px;
           height: 62px;
         }
       }
+
       p {
         padding-top: 25px;
         @include main-font(1.5rem, bold);
-        @include max-screen(768px){
+        @include max-screen(768px) {
           font-size: 18px;
           padding-top: 20px;
         }
+
         span {
           @include main-font(14px, 400);
           color: #EA8733;
-          @include max-screen(768px){
+          @include max-screen(768px) {
             font-size: 12px;
           }
 
@@ -501,30 +657,41 @@ footer {
   .container-fluid {
     margin: 0 -12px;
   }
+
   padding-top: 74px;
+  @include max-screen(768px){
+    padding-top: 48px;
+  }
+
 
   a {
     display: block;
     max-width: 76px;
     margin-bottom: 44px;
-    @include max-screen(430px){
+    @include max-screen(430px) {
       margin: 0 auto 28px;
     }
   }
+
   h5 {
     @include main-font(18px, bold);
     margin-bottom: 22px;
   }
+
   .contact-unit {
     margin-bottom: 32px;
-    @include max-screen(430px){
+    @include max-screen(430px) {
       margin-bottom: 16px;
     }
+
     img {
       margin-right: 16px;
     }
+
     span {
       @include main-font(1rem, 400)
     }
   }
 }
+
+
