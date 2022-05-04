@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(bootstrap.min.css);
 @import url(main-style.css);
 * {
@@ -527,8 +528,55 @@ h3, .proyectos-section .carousel-title {
         padding: 0 12px;
         margin: 0 -12px; } }
     .proyectos-section .double-img picture {
+      position: relative;
       display: block;
       width: 50%; }
+      .proyectos-section .double-img picture:first-child:before {
+        display: inline-block;
+        content: "Antes";
+        padding: 8px 20px;
+        background: #fff;
+        border-radius: 8px;
+        font-weight: 600;
+        color: #000;
+        font-size: 1rem;
+        font-family: "Roboto", sans-serif;
+        position: absolute;
+        right: 33%;
+        top: 20px; }
+        @media screen and (max-width: 576px) {
+          .proyectos-section .double-img picture:first-child:before {
+            right: 43%; } }
+        @media screen and (max-width: 420px) {
+          .proyectos-section .double-img picture:first-child:before {
+            right: 44%;
+            top: 12px;
+            font-size: 12px;
+            padding: 6px 9px;
+            border-radius: 0; } }
+      .proyectos-section .double-img picture:last-child:before {
+        display: inline-block;
+        content: "Después";
+        padding: 8px 10px;
+        background: #fff;
+        border-radius: 8px;
+        font-weight: 600;
+        color: #000;
+        font-size: 1rem;
+        font-family: "Roboto", sans-serif;
+        position: absolute;
+        right: 33%;
+        top: 20px; }
+        @media screen and (max-width: 576px) {
+          .proyectos-section .double-img picture:last-child:before {
+            right: 43%; } }
+        @media screen and (max-width: 420px) {
+          .proyectos-section .double-img picture:last-child:before {
+            right: 44%;
+            top: 12px;
+            font-size: 12px;
+            padding: 6px 2px;
+            border-radius: 0; } }
       @media screen and (max-width: 576px) {
         .proyectos-section .double-img picture {
           width: 100%; } }

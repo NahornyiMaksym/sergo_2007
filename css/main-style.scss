@@ -652,8 +652,55 @@ h3 {
     }
 
     picture {
+      position: relative;
       display: block;
       width: 50%;
+      &:first-child {
+        &:before {
+          display: inline-block;
+          content: "Antes";
+          padding: 8px 20px;
+          background: #fff;
+          border-radius: 8px;
+          @include main-font(1rem, 600);
+          position: absolute;
+          right: 33%;
+          top: 20px;
+          @include max-screen(576px){
+            right: 43%;
+          }
+          @include max-screen(420px){
+            right: 44%;
+            top: 12px;
+            font-size: 12px;
+            padding: 6px 9px;
+            border-radius: 0;
+          }
+        }
+      }
+      &:last-child {
+        &:before {
+          display: inline-block;
+          content: "Después";
+          padding: 8px 10px;
+          background: #fff;
+          border-radius: 8px;
+          @include main-font(1rem, 600);
+          position: absolute;
+          right: 33%;
+          top: 20px;
+          @include max-screen(576px){
+            right: 43%;
+          }
+          @include max-screen(420px){
+            right: 44%;
+            top: 12px;
+            font-size: 12px;
+            padding: 6px 2px;
+            border-radius: 0;
+          }
+        }
+      }
       @include max-screen(576px) {
         width: 100%;
       }
