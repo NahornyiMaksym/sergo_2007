@@ -330,7 +330,11 @@ h3, .proyectos-section .carousel-title {
     .form-section form .form-body input {
       display: block;
       width: 100%;
-      border: none; }
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      padding-top: 26px;
+      padding-bottom: 16px;
+      margin-bottom: 10px; }
     .form-section form .form-body label {
       display: none; }
   .form-section h3, .form-section .proyectos-section .carousel-title, .proyectos-section .form-section .carousel-title {
