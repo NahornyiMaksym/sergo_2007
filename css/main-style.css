@@ -413,6 +413,9 @@ h3, .proyectos-section .carousel-title {
             padding: 8px 0; } }
   .form-section h3, .form-section .proyectos-section .carousel-title, .proyectos-section .form-section .carousel-title {
     margin-bottom: 70px; }
+    @media screen and (max-width: 768px) {
+      .form-section h3, .form-section .proyectos-section .carousel-title, .proyectos-section .form-section .carousel-title {
+        margin-bottom: 24px; } }
   .form-section .form-sec-txt {
     font-weight: 400;
     color: #000;
@@ -422,7 +425,8 @@ h3, .proyectos-section .carousel-title {
     margin-bottom: 44px; }
     @media screen and (max-width: 768px) {
       .form-section .form-sec-txt {
-        font-size: 1rem; } }
+        font-size: 1rem;
+        margin-bottom: 24px; } }
   .form-section .giant-unit {
     background: linear-gradient(180deg, rgba(234, 135, 51, 0.7) 0%, #EA8733 100%);
     box-shadow: 0.1px 0px 15px -6px #EA8733;

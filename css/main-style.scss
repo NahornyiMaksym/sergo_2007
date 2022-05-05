@@ -506,6 +506,9 @@ h3 {
 
   h3 {
     margin-bottom: 70px;
+    @include max-screen(768px) {
+      margin-bottom: 24px;
+    }
   }
 
   .form-sec-txt {
@@ -514,6 +517,7 @@ h3 {
     margin-bottom: 44px;
     @include max-screen(768px) {
       font-size: 1rem;
+      margin-bottom: 24px;
     }
   }
 
