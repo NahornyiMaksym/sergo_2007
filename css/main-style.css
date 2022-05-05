@@ -386,7 +386,7 @@ h3, .proyectos-section .carousel-title {
         margin-bottom: 10px; }
         @media screen and (max-width: 430px) {
           .form-section form .form-body input {
-            fnot-size: 14px;
+            font-size: 14px;
             padding-top: 14px;
             padding-bottom: 8px; } }
       .form-section form .form-body label {
@@ -408,7 +408,9 @@ h3, .proyectos-section .carousel-title {
         text-transform: uppercase; }
         @media screen and (max-width: 430px) {
           .form-section form .form-body button {
-            fnot-size: 14px; } }
+            margin-top: 47px;
+            font-size: 14px;
+            padding: 8px 0; } }
   .form-section h3, .form-section .proyectos-section .carousel-title, .proyectos-section .form-section .carousel-title {
     margin-bottom: 70px; }
   .form-section .form-sec-txt {
