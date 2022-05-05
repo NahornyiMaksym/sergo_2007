@@ -512,6 +512,9 @@ h3 {
     @include main-font(24px, 400);
     line-height: 150%;
     margin-bottom: 44px;
+    @include max-screen(768px) {
+      font-size: 1rem;
+    }
   }
 
   .giant-unit {
