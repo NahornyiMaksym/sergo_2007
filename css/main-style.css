@@ -85,7 +85,7 @@ nav li {
       transform: scale(1.1); }
 
 h6 {
-  font-weight: bold;
+  font-weight: 500;
   color: #000;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
@@ -305,7 +305,10 @@ h3, .proyectos-section .carousel-title {
       text-transform: uppercase; }
 
 .form-section {
-  padding-bottom: 150px; }
+  padding-bottom: 2px; }
+  @media screen and (max-width: 992px) {
+    .form-section {
+      padding-bottom: 30px; } }
   @media screen and (max-width: 992px) {
     .form-section .col-revers {
       flex-direction: column-reverse; } }
@@ -532,6 +535,15 @@ h3, .proyectos-section .carousel-title {
       .geografia-section h3, .geografia-section .proyectos-section .carousel-title, .proyectos-section .geografia-section .carousel-title {
         margin-top: 0;
         margin-bottom: 24px; } }
+  .geografia-section p {
+    font-weight: 400;
+    color: #000;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    line-height: 150%; }
+    @media screen and (max-width: 768px) {
+      .geografia-section p {
+        font-size: 1rem; } }
 
 .m-width-425 {
   max-width: 425px; }
@@ -542,9 +554,9 @@ h3, .proyectos-section .carousel-title {
 
 .servicios-section {
   padding-bottom: 150px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     .servicios-section {
-      padding-bottom: 60px; } }
+      padding-bottom: 20px; } }
   .servicios-section h3, .servicios-section .proyectos-section .carousel-title, .proyectos-section .servicios-section .carousel-title {
     margin-bottom: 70px; }
     @media screen and (max-width: 575px) {
@@ -774,6 +786,7 @@ h3, .proyectos-section .carousel-title {
   @media screen and (max-width: 768px) {
     .comentarios-section {
       padding-top: 60px;
+      padding-bottom: 0;
       background: #fff; } }
   .comentarios-section .comentarios-unit {
     padding: 25px 57px 21px;
@@ -858,7 +871,7 @@ footer {
     footer .contact-unit span {
       font-weight: 400;
       color: #000;
-      font-size: 1rem;
+      font-size: 14px;
       font-family: "Roboto", sans-serif; }
 
 /*# sourceMappingURL=main-style.css.map */
