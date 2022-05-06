@@ -19,16 +19,34 @@ a {
   color: transparent; }
 
 .number {
+  position: relative;
   margin-left: 34px;
   font-weight: 500;
   color: #000;
   font-size: 1rem;
   font-family: "Oswald", sans-serif;
   vertical-align: middle; }
+  .number::before {
+    transition: all 0.3s;
+    content: "";
+    height: 2px;
+    background-color: #EA8733;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 100%; }
+  .number:hover::before {
+    left: 0;
+    right: 0; }
   @media screen and (max-width: 430px) {
     .number {
       display: none; } }
 
+.logo-number .header-logo {
+  transition: all 0.3s;
+  border-radius: 50%; }
+  .logo-number .header-logo:hover {
+    box-shadow: 0 0 15px #EA8733; }
 @media screen and (max-width: 350px) {
   .logo-number {
     display: flex;
@@ -46,14 +64,25 @@ nav li {
       nav li:last-of-type {
         margin-right: 15px; } }
   nav li a {
+    position: relative;
     text-decoration: none;
     font-weight: 400;
     color: #000;
     font-size: 1rem;
     font-family: "Oswald", sans-serif;
     transition: all 0.3s; }
-    nav li a:hover {
-      transform: scale(1.1); }
+    nav li a::before {
+      transition: all 0.3s;
+      content: "";
+      height: 2px;
+      background-color: #EA8733;
+      position: absolute;
+      bottom: 0;
+      left: 100%;
+      right: 100%; }
+    nav li a:hover::before {
+      left: 0;
+      right: 0; }
 
 h6 {
   font-weight: 500;
@@ -76,14 +105,14 @@ h6 {
   width: 45px;
   height: 4px;
   background-color: #000; }
-  .burger:before {
+  .burger::before {
     content: "";
     display: inline-block;
     border-radius: 5px;
     width: 45px;
     height: 4px;
     background-color: #000; }
-  .burger:after {
+  .burger::after {
     display: inline-block;
     content: "";
     border-radius: 5px;
@@ -293,7 +322,7 @@ h3, .proyectos-section .carousel-title {
   .form-section form {
     max-width: 425px;
     position: relative;
-    bottom: 148px; }
+    bottom: 168px; }
     @media screen and (max-width: 992px) {
       .form-section form {
         margin: auto;
@@ -324,16 +353,16 @@ h3, .proyectos-section .carousel-title {
           .form-section form .form-top .form-title {
             font-size: 24px;
             margin-bottom: 4px; } }
-        .form-section form .form-top .form-title:before {
+        .form-section form .form-top .form-title::before {
           content: url("../images/form-icon.svg");
           display: inline-block;
           position: absolute;
           left: 58px; }
           @media screen and (max-width: 1400px) {
-            .form-section form .form-top .form-title:before {
+            .form-section form .form-top .form-title::before {
               left: 45px; } }
           @media screen and (max-width: 430px) {
-            .form-section form .form-top .form-title:before {
+            .form-section form .form-top .form-title::before {
               left: 50px;
               content: url("../images/form-adapt-icon.svg"); } }
       .form-section form .form-top .form-sub-title, .form-section form .form-top .form-body input, .form-section form .form-body .form-top input {
@@ -390,7 +419,7 @@ h3, .proyectos-section .carousel-title {
             font-size: 14px;
             padding: 8px 0; } }
   .form-section h3, .form-section .proyectos-section .carousel-title, .proyectos-section .form-section .carousel-title {
-    margin-bottom: 70px; }
+    margin-bottom: 65px; }
     @media screen and (max-width: 768px) {
       .form-section h3, .form-section .proyectos-section .carousel-title, .proyectos-section .form-section .carousel-title {
         margin-bottom: 24px; } }
@@ -400,7 +429,7 @@ h3, .proyectos-section .carousel-title {
     font-size: 24px;
     font-family: "Roboto", sans-serif;
     line-height: 150%;
-    margin-bottom: 44px; }
+    margin-bottom: 30px; }
     @media screen and (max-width: 768px) {
       .form-section .form-sec-txt {
         font-size: 1rem;
@@ -408,7 +437,7 @@ h3, .proyectos-section .carousel-title {
   .form-section .giant-unit {
     background: linear-gradient(180deg, rgba(234, 135, 51, 0.7) 0%, #EA8733 100%);
     box-shadow: 0.1px 0px 15px -6px #EA8733;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
     padding-bottom: 14px;
     padding-top: 4px; }
@@ -679,7 +708,7 @@ h3, .proyectos-section .carousel-title {
       position: relative;
       display: block;
       width: 50%; }
-      .proyectos-section .double-img picture:first-child:before {
+      .proyectos-section .double-img picture:first-child::before {
         display: inline-block;
         content: "Antes";
         padding: 8px 20px;
@@ -693,16 +722,16 @@ h3, .proyectos-section .carousel-title {
         right: 33%;
         top: 20px; }
         @media screen and (max-width: 576px) {
-          .proyectos-section .double-img picture:first-child:before {
+          .proyectos-section .double-img picture:first-child::before {
             right: 43%; } }
         @media screen and (max-width: 420px) {
-          .proyectos-section .double-img picture:first-child:before {
+          .proyectos-section .double-img picture:first-child::before {
             right: 44%;
             top: 12px;
             font-size: 12px;
             padding: 6px 9px;
             border-radius: 0; } }
-      .proyectos-section .double-img picture:last-child:before {
+      .proyectos-section .double-img picture:last-child::before {
         display: inline-block;
         content: "Después";
         padding: 8px 10px;
@@ -716,10 +745,10 @@ h3, .proyectos-section .carousel-title {
         right: 33%;
         top: 20px; }
         @media screen and (max-width: 576px) {
-          .proyectos-section .double-img picture:last-child:before {
+          .proyectos-section .double-img picture:last-child::before {
             right: 43%; } }
         @media screen and (max-width: 420px) {
-          .proyectos-section .double-img picture:last-child:before {
+          .proyectos-section .double-img picture:last-child::before {
             right: 44%;
             top: 12px;
             font-size: 12px;
@@ -841,15 +870,16 @@ footer {
     list-style: none;
     padding-left: 0; }
   footer .logo-footer {
+    border-radius: 50%;
     display: block;
     max-width: 76px;
     margin-bottom: 44px;
-    transition: all 0.8s; }
+    transition: all 0.3s; }
     @media screen and (max-width: 430px) {
       footer .logo-footer {
         margin: 0 auto 28px; } }
     footer .logo-footer:hover {
-      transform: rotate(360deg); }
+      box-shadow: 0 0 15px #EA8733; }
   footer h5 {
     font-weight: bold;
     color: #000;
@@ -869,9 +899,21 @@ footer {
       font-size: 14px;
       font-family: "Roboto", sans-serif;
       text-decoration: none;
-      transition: all 0.2s; }
+      transition: all 0.3s;
+      position: relative; }
+      footer .contact-unit a::before {
+        transition: all 0.3s;
+        content: "";
+        height: 2px;
+        background-color: #EA8733;
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        right: 100%; }
       footer .contact-unit a:hover {
-        transform: scale(1.1);
-        text-decoration: underline 1px solid #000; }
+        transform: scale(1.1); }
+        footer .contact-unit a:hover::before {
+          left: 0;
+          right: 0; }
 
 /*# sourceMappingURL=main-style.css.map */

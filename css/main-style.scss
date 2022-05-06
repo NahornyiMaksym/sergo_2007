@@ -40,6 +40,7 @@ $shadow: 0.1px 0px 20px -6px rgba(0, 0, 0, 0.25);
   }
 }
 
+
 a {
   text-decoration: none;
   display: inline-block;
@@ -58,7 +59,24 @@ a {
 }
 
 .number {
+  position: relative;
   margin-left: 34px;
+  &::before {
+    transition: all 0.3s;
+    content: "";
+    height: 2px;
+    background-color: #EA8733;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 100%;
+  }
+  &:hover {
+    &::before {
+      left: 0;
+      right: 0;
+    }
+  }
   @include title-font(1rem, 500);
   vertical-align: middle;
   @include max-screen(430px) {
@@ -67,6 +85,13 @@ a {
 }
 
 .logo-number {
+  .header-logo {
+    transition: all 0.3s;
+    border-radius: 50%;
+    &:hover {
+      box-shadow: 0 0 15px #EA8733;
+    }
+  }
 
   @include max-screen(350px) {
     display: flex;
@@ -92,13 +117,27 @@ nav {
     }
 
     a {
+      position: relative;
       text-decoration: none;
       @include title-font(1rem, 400);
       transition: all 0.3s;
-
-      &:hover {
-        transform: scale(1.1);
+      &::before {
+        transition: all 0.3s;
+        content: "";
+        height: 2px;
+        background-color: #EA8733;
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        right: 100%;
       }
+      &:hover {
+        &::before {
+          left: 0;
+          right: 0;
+        }
+      }
+
     }
   }
 }
@@ -123,7 +162,7 @@ h6 {
   height: 4px;
   background-color: $font-color;
 
-  &:before {
+  &::before {
     content: "";
     display: inline-block;
     border-radius: 5px;
@@ -132,7 +171,7 @@ h6 {
     background-color: $font-color;
   }
 
-  &:after {
+  &::after {
     display: inline-block;
     content: "";
     border-radius: 5px;
@@ -364,7 +403,7 @@ h3 {
   form {
     max-width: 425px;
     position: relative;
-    bottom: 148px;
+    bottom: 168px;
     @include max-screen(992px) {
       margin: auto;
       bottom: 60px;
@@ -394,7 +433,7 @@ h3 {
           font-size: 24px;
           margin-bottom: 4px;
         }
-        &:before {
+        &::before {
           content: url("../images/form-icon.svg");
           display: inline-block;
           position: absolute;
@@ -474,7 +513,7 @@ h3 {
   }
 
   h3 {
-    margin-bottom: 70px;
+    margin-bottom: 65px;
     @include max-screen(768px) {
       margin-bottom: 24px;
     }
@@ -483,7 +522,7 @@ h3 {
   .form-sec-txt {
     @include main-font(24px, 400);
     line-height: 150%;
-    margin-bottom: 44px;
+    margin-bottom: 30px;
     @include max-screen(768px) {
       font-size: 1rem;
       margin-bottom: 24px;
@@ -493,7 +532,7 @@ h3 {
   .giant-unit {
     background: linear-gradient(180deg, rgba(234, 135, 51, 0.7) 0%, #EA8733 100%);
     box-shadow: 0.1px 0px 15px -6px #EA8733;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
     padding-bottom: 14px;
     padding-top: 4px;
@@ -821,7 +860,7 @@ h3 {
       width: 50%;
 
       &:first-child {
-        &:before {
+        &::before {
           display: inline-block;
           content: "Antes";
           padding: 8px 20px;
@@ -845,7 +884,7 @@ h3 {
       }
 
       &:last-child {
-        &:before {
+        &::before {
           display: inline-block;
           content: "Después";
           padding: 8px 10px;
@@ -1012,15 +1051,17 @@ footer {
 
 
   .logo-footer {
+    border-radius: 50%;
     display: block;
     max-width: 76px;
     margin-bottom: 44px;
+
     @include max-screen(430px) {
       margin: 0 auto 28px;
     }
-    transition: all 0.8s;
+    transition: all 0.3s;
     &:hover {
-      transform: rotate(360deg);
+      box-shadow: 0 0 15px #EA8733;
     }
   }
 
@@ -1042,10 +1083,26 @@ footer {
     a {
       @include main-font(14px, 400);
       text-decoration: none;
-      transition: all 0.2s;
+      transition: all 0.3s;
+
+      position: relative;
+      &::before {
+        transition: all 0.3s;
+        content: "";
+        height: 2px;
+        background-color: #EA8733;
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        right: 100%;
+      }
       &:hover {
+        &::before {
+          left: 0;
+          right: 0;
+        }
         transform: scale(1.1);
-        text-decoration: underline 1px solid #000;
+
       }
     }
   }
