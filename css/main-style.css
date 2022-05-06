@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url(bootstrap.min.css);
+@import url(owl.carousel.min.css);
+@import url(owl.theme.default.min.css);
 @import url(main-style.css);
 * {
   margin: 0;
@@ -10,38 +12,6 @@ a {
   display: inline-block; }
   a:hover {
     color: #000; }
-
-.animated-icon2 span:nth-child(1) {
-  top: 0px; }
-
-.animated-icon2 span:nth-child(2),
-.animated-icon2 span:nth-child(3) {
-  top: 10px; }
-
-.animated-icon2 span:nth-child(4) {
-  top: 20px; }
-
-.animated-icon2.open span:nth-child(1) {
-  top: 11px;
-  width: 0%;
-  left: 50%; }
-
-.animated-icon2.open span:nth-child(2) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg); }
-
-.animated-icon2.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg); }
-
-.animated-icon2.open span:nth-child(4) {
-  top: 11px;
-  width: 0%;
-  left: 50%; }
 
 .navbar-light .navbar-toggler {
   border: none;
