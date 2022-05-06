@@ -2,6 +2,7 @@
 @import url(bootstrap.min.css);
 @import url(owl.carousel.min.css);
 @import url(owl.theme.default.min.css);
+@import url(animate.css);
 @import url(normalize.css);
 @import url(main-style.css);
 * {
@@ -41,6 +42,12 @@ a {
   @media screen and (max-width: 430px) {
     .number {
       display: none; } }
+
+.number-adapt {
+  display: none; }
+  @media screen and (max-width: 430px) {
+    .number-adapt {
+      display: inline-block; } }
 
 .logo-number .header-logo {
   transition: all 0.3s;
@@ -224,17 +231,18 @@ h6 {
   position: absolute;
   right: 0;
   bottom: 145px;
-  animation: jumping-arrow 1s linear infinite; }
+  animation: jumping-arrow 1s linear;
+  animation-iteration-count: 5; }
   @media screen and (max-width: 768px) {
     .arrow-down {
       display: none; } }
 @keyframes jumping-arrow {
   0% {
-    bottom: 195px; }
-  50% {
     bottom: 145px; }
+  50% {
+    bottom: 195px; }
   100% {
-    bottom: 195px; } }
+    bottom: 145px; } }
 h3, .proyectos-section .carousel-title {
   font-weight: bold;
   color: #000;

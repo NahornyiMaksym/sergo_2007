@@ -6,6 +6,7 @@
 @import "bootstrap.min.css";
 @import "owl.carousel.min.css";
 @import "owl.theme.default.min.css";
+@import "animate.css";
 @import "normalize.css";
 @import "main-style.css";
 
@@ -84,6 +85,12 @@ a {
   vertical-align: middle;
   @include max-screen(430px) {
     display: none;
+  }
+}
+.number-adapt {
+  display: none;
+  @include max-screen(430px) {
+    display: inline-block;
   }
 }
 
@@ -309,16 +316,17 @@ h6 {
     display: none;
   }
 
-  animation: jumping-arrow 1s linear infinite;
+  animation: jumping-arrow 1s linear;
+  animation-iteration-count: 5;
   @keyframes jumping-arrow {
     0% {
-      bottom: 195px
-    }
-    50% {
       bottom: 145px
     }
-    100% {
+    50% {
       bottom: 195px
+    }
+    100% {
+      bottom: 145px
     }
   }
 }
