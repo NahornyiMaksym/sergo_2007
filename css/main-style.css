@@ -710,6 +710,9 @@ h3, .proyectos-section .carousel-title {
     .proyectos-section .carousel-title {
       font-size: 43px;
       padding-left: 1px; } }
+  @media screen and (max-width: 575px) {
+    .proyectos-section .carousel-title {
+      font-size: 24px; } }
   .proyectos-section .slide-title {
     position: absolute;
     bottom: 30px;

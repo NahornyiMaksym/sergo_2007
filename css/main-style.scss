@@ -885,6 +885,9 @@ h3 {
       font-size: 43px;
       padding-left: 1px;
     }
+    @include max-screen(575px) {
+      font-size: 24px;
+    }
   }
 
   .slide-title {
