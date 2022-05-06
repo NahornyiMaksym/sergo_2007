@@ -409,10 +409,18 @@ h3, .proyectos-section .carousel-title {
         color: #fff;
         text-align: center;
         background: #000;
+        border: none;
         border-radius: 28px;
         margin-top: 60px;
-        border: none;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        transition: all 0.3s; }
+        .form-section form .form-body button:hover {
+          background: #fff;
+          outline: 1px solid #EA8733;
+          color: #000; }
+        .form-section form .form-body button:active {
+          background: #EC9347;
+          color: #fff; }
         @media screen and (max-width: 430px) {
           .form-section form .form-body button {
             margin-top: 47px;

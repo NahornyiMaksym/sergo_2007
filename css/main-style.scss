@@ -499,10 +499,20 @@ h3 {
         color: #fff;
         text-align: center;
         background: #000;
+        border: none;
         border-radius: 28px;
         margin-top: 60px;
-        border: none;
         text-transform: uppercase;
+        transition: all 0.3s;
+        &:hover {
+          background: #fff;
+          outline: 1px solid #EA8733;
+          color: #000;
+        }
+        &:active {
+          background: #EC9347;
+          color: #fff;
+        }
         @include max-screen(430px) {
           margin-top: 47px;
           font-size: 14px;
