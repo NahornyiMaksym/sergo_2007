@@ -536,6 +536,9 @@ h3 {
     text-align: center;
     padding-bottom: 14px;
     padding-top: 4px;
+    @include max-screen(430px) {
+      margin-bottom: 12px;
+    }
 
     .giant-numbers {
       @include title-font(40px, 500);
