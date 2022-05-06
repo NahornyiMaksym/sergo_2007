@@ -4,10 +4,9 @@
 }
 
 @import "bootstrap.min.css";
-
 @import "owl.carousel.min.css";
 @import "owl.theme.default.min.css";
-
+@import "normalize.css";
 @import "main-style.css";
 
 
@@ -260,8 +259,16 @@ h6 {
   position: absolute;
   right: 0;
   bottom: 145px;
+
   @include max-screen(768px) {
     display: none;
+  }
+
+  animation: jumping-arrow 1s linear infinite;
+  @keyframes jumping-arrow {
+    0% { bottom: 195px }
+    50% { bottom: 145px }
+    100% { bottom: 195px }
   }
 }
 
@@ -488,12 +495,13 @@ h3 {
     box-shadow: 0.1px 0px 15px -6px #EA8733;
     margin-bottom: 30px;
     text-align: center;
-    padding-bottom: 3px;
+    padding-bottom: 14px;
+    padding-top: 4px;
 
     .giant-numbers {
-      @include title-font(50px, 500);
+      @include title-font(40px, 500);
       color: #fff;
-      margin-bottom: 12px;
+      margin-bottom: 0;
       @include max-screen(430px) {
         font-size: 30px;
       }
@@ -508,6 +516,7 @@ h3 {
       min-height: 32px;
       @include max-screen(430px) {
         font-size: 12px;
+        max-width: 130px;
       }
 
     }
@@ -996,13 +1005,22 @@ footer {
     padding-top: 48px;
   }
 
+  .footer-contacts {
+    list-style: none;
+    padding-left: 0;
+  }
 
-  a {
+
+  .logo-footer {
     display: block;
     max-width: 76px;
     margin-bottom: 44px;
     @include max-screen(430px) {
       margin: 0 auto 28px;
+    }
+    transition: all 0.8s;
+    &:hover {
+      transform: rotate(360deg);
     }
   }
 
@@ -1021,8 +1039,14 @@ footer {
       margin-right: 16px;
     }
 
-    span {
+    a {
       @include main-font(14px, 400);
+      text-decoration: none;
+      transition: all 0.2s;
+      &:hover {
+        transform: scale(1.1);
+        text-decoration: underline 1px solid #000;
+      }
     }
   }
 }

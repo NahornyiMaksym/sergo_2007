@@ -17,7 +17,6 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 
-
     <link rel="stylesheet" href="css/main-style.css">
 
 </head>
@@ -33,9 +32,9 @@
                         <img src="images/logo.svg" alt="logo">
                     </picture>
                 </a>
-                <span class="number">
+                <a href="tel:+34617151558" class="number">
                     +34 617 15 15 58
-                </span>
+                </a>
             </div>
 
             <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse"
@@ -184,11 +183,13 @@
                             <label for="email"></label>
                         </div>
                         <div>
-                            <input id="Describe" name="Describe" type="text" placeholder="Describa su solicitud en un campo libre*">
+                            <input id="Describe" name="Describe" type="text"
+                                   placeholder="Describa su solicitud en un campo libre*">
                             <label for="Describe"></label>
                         </div>
                         <div>
-                            <input id="work_breakdown" name="work_breakdown" type="text" placeholder="Desglose de trabajo (m2)">
+                            <input id="work_breakdown" name="work_breakdown" type="text"
+                                   placeholder="Desglose de trabajo (m2)">
                             <label for="work_breakdown"></label>
                         </div>
 
@@ -663,7 +664,7 @@
         <div class="row justify-content-center">
             <div class="col-xl-5 col-lg-6">
                 <div class="comentarios-unit">
-                    <img class="d-block stars" src="images/stars.svg" alt="stars">
+                    <img class="d-block stars" src="images/stars-new.svg" alt="stars">
                     <p class="comentarios-txt">
                         Hice la Reforma de mi casa con Sergo 2007, tire todos los tabiques de la planta baja, cambié
                         suelo,<br>
@@ -683,7 +684,7 @@
 
             <div class="col-xl-5 col-lg-6">
                 <div class="comentarios-unit">
-                    <img class="d-block stars" src="images/stars.svg" alt="stars">
+                    <img class="d-block stars" src="images/stars-new.svg" alt="stars">
                     <p class="comentarios-txt">
                         Conozco esta empresa desde hace más de 15 años. Realizando desde obras grandes (edificio
                         completo),
@@ -712,29 +713,31 @@
 <footer>
     <div class="container">
         <div class="offset-xl-1">
-            <a href="#"><img src="images/logo.svg" alt="logo"></a>
+            <a href="#" class="logo-footer"><img src="images/logo.svg" alt="logo"></a>
 
             <h5>
                 Contactos
             </h5>
-            <div class="contact-unit">
-                <img class="d-inline-block" src="images/location-icon.svg" alt="icon">
-                <span class="d-inline-block">04770 Adra (Almeria)</span>
-            </div>
+            <ul class="footer-contacts">
+                <li class="contact-unit">
+                    <img class="d-inline-block" src="images/location-icon.svg" alt="icon">
+                    <a href="#" class="d-inline-block">04770 Adra (Almeria)</a>
+                </li>
 
-            <div class="contact-unit">
-                <img class="d-inline-block" src="images/mail-icon.svg" alt="icon">
-                <span class="d-inline-block">syr_sergo_2007@hotmail.com </span>
-            </div>
+                <li class="contact-unit">
+                    <img class="d-inline-block" src="images/mail-icon.svg" alt="icon">
+                    <a href="#" class="d-inline-block">syr_sergo_2007@hotmail.com </a>
+                </li>
 
-            <div class="contact-unit">
-                <img class="d-inline-block" src="images/phone-icon.svg" alt="icon">
-                <span class="d-inline-block">+34 617 15 15 58</span>
-            </div>
+                <li class="contact-unit">
+                    <img class="d-inline-block" src="images/phone-icon.svg" alt="icon">
+                    <a href="tel:+34617151558" class="d-inline-block">+34 617 15 15 58</a>
+                </li>
+            </ul>
         </div>
     </div>
     <div>
-        <img class="d-block w-100" src="images/footer-img.jpg" alt="pictore">
+        <img class="d-block w-100" src="images/footer-img.jpg" alt="picture">
     </div>
 </footer>
 
