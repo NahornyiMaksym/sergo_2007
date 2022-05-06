@@ -532,7 +532,7 @@ h3, .proyectos-section .carousel-title {
     @media screen and (max-width: 768px) {
       .equipo-section .quote-img {
         position: absolute;
-        right: -100%;
+        right: -97%;
         bottom: 0;
         height: 20%; } }
   .equipo-section .person-img {
@@ -634,25 +634,42 @@ h3, .proyectos-section .carousel-title {
     @media screen and (max-width: 575px) {
       .ventajas-section h3, .ventajas-section .proyectos-section .carousel-title, .proyectos-section .ventajas-section .carousel-title {
         margin-bottom: 24px; } }
+  .ventajas-section .ventajas-unit h6 {
+    max-width: 170px; }
+    @media screen and (max-width: 575px) {
+      .ventajas-section .ventajas-unit h6 {
+        padding-top: 11px;
+        max-width: none; } }
   @media screen and (max-width: 575px) {
     .ventajas-section .ventajas-unit:nth-child(-n+3) {
       display: none; } }
   @media screen and (max-width: 575px) {
+    .ventajas-section .ventajas-unit:nth-child(5) {
+      order: 1; } }
+  @media screen and (max-width: 575px) {
     .ventajas-section .ventajas-unit {
-      margin-bottom: 24px; } }
+      margin-bottom: 11px;
+      display: flex; } }
   .ventajas-section .ventajas-unit:first-child {
     margin-bottom: 50px; }
   .ventajas-section .ventajas-unit p {
     font-weight: 400;
     color: #000;
-    font-size: 0.9rem;
+    font-size: 14px;
     font-family: "Roboto", sans-serif;
     opacity: 0.6;
     margin-bottom: 0;
     margin-top: 10px; }
+    @media screen and (max-width: 575px) {
+      .ventajas-section .ventajas-unit p {
+        font-size: 11px;
+        margin-top: 4px;
+        max-width: 215px; } }
   .ventajas-section .ventajas-unit .icon-vantajas {
-    margin-left: -9px;
-    margin-bottom: 3px; }
+    margin-left: -9px; }
+    @media screen and (max-width: 575px) {
+      .ventajas-section .ventajas-unit .icon-vantajas {
+        margin-right: 11px; } }
   @media screen and (max-width: 1400px) {
     .ventajas-section .ventajas-img {
       margin-top: 93px; } }
@@ -838,6 +855,11 @@ h3, .proyectos-section .carousel-title {
 .comentarios-section {
   background: linear-gradient(90deg, rgba(146, 146, 146, 0.2) 0%, rgba(255, 255, 255, 0.5) 24.76%);
   padding: 40px 0; }
+  .comentarios-section h3, .comentarios-section .proyectos-section .carousel-title, .proyectos-section .comentarios-section .carousel-title {
+    margin-bottom: 70px; }
+    @media screen and (max-width: 992px) {
+      .comentarios-section h3, .comentarios-section .proyectos-section .carousel-title, .proyectos-section .comentarios-section .carousel-title {
+        margin-bottom: 0; } }
   @media screen and (max-width: 768px) {
     .comentarios-section {
       padding-top: 60px;
