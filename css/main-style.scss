@@ -1084,15 +1084,21 @@ h3 {
   }
 
   .comentarios-unit {
-    padding: 25px 57px 21px;
+    position: relative;
+    padding: 25px 57px 141px;
     border-radius: 20px;
     box-shadow: $shadow;
+    height: 100%;
     @include max-screen(992px) {
       margin-top: 24px;
+      height: auto;
+    }
+    @include max-screen(768px) {
+      padding-bottom: 86px;
     }
 
     @include max-screen(576px) {
-      padding: 12px 12px 33px;
+      padding: 12px 12px 86px;
     }
 
     .stars {
@@ -1109,6 +1115,11 @@ h3 {
 
     .comentarios-author {
       display: flex;
+      position: absolute;
+      bottom: 21px;
+      @include max-screen(992px){
+        bottom: 12px;
+      }
 
       img {
         margin-right: 14px;
