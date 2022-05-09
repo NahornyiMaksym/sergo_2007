@@ -39,6 +39,9 @@ a {
   .number:hover::before {
     left: 0;
     right: 0; }
+  @media screen and (max-width: 1200px) {
+    .number {
+      margin-left: 10px; } }
   @media screen and (max-width: 430px) {
     .number {
       display: none; } }
@@ -59,18 +62,18 @@ a {
     display: flex;
     flex-direction: column; } }
 
-nav li {
+nav ul li {
   text-transform: uppercase;
   text-align: end;
   margin: 0 15px; }
-  nav li:last-of-type {
+  nav ul li:last-of-type {
     margin-right: 0; }
-  @media screen and (max-width: 991px) {
-    nav li {
+  @media screen and (max-width: 992px) {
+    nav ul li {
       margin: 5px 15px; }
-      nav li:last-of-type {
+      nav ul li:last-of-type {
         margin-right: 15px; } }
-  nav li a {
+  nav ul li a {
     position: relative;
     text-decoration: none;
     font-weight: 400;
@@ -78,7 +81,7 @@ nav li {
     font-size: 1rem;
     font-family: "Oswald", sans-serif;
     transition: all 0.3s; }
-    nav li a::before {
+    nav ul li a::before {
       transition: all 0.3s;
       content: "";
       height: 2px;
@@ -87,7 +90,7 @@ nav li {
       bottom: 0;
       left: 100%;
       right: 100%; }
-    nav li a:hover::before {
+    nav ul li a:hover::before {
       left: 0;
       right: 0; }
 
