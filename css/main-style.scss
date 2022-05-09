@@ -501,7 +501,12 @@ h3 {
         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
         padding-top: 26px;
         padding-bottom: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
         margin-bottom: 10px;
+        &:focus{
+          outline: none;
+        }
 
         @include max-screen(430px) {
           font-size: 14px;
