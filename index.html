@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap"
           rel="stylesheet">
 
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -21,6 +22,7 @@
 
 </head>
 <body>
+
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -163,8 +165,59 @@
                 </div>
             </div>
 
+            <!--            <div class="col-xl-4 col-lg-5">-->
+            <!--                <form name="request" action="send-email.php" method="post" id="form">-->
+            <!--                    <div class="form-top">-->
+            <!--                        <p class="form-title">-->
+            <!--                            Solicitar<br> presupuesto-->
+            <!--                        </p>-->
+            <!--                        <p class="form-sub-title">-->
+            <!--                            *oferta sin compromiso-->
+            <!--                        </p>-->
+            <!--                    </div>-->
+
+            <!--                    <div class="form-body">-->
+            <!--                        <div>-->
+            <!--                            <input id="name" name="name" type="text" placeholder="Nombre">-->
+            <!--                            <label for="name"></label>-->
+            <!--                        </div>-->
+            <!--                        <div>-->
+            <!--                            <input id="tel" name="tel" type="tel" placeholder="Teléfono">-->
+            <!--                            <label for="tel"></label>-->
+            <!--                        </div>-->
+            <!--                        <div>-->
+            <!--                            <input id="email" name="email" type="email" placeholder="Correo electrónico" required>-->
+            <!--                            <label for="email"></label>-->
+            <!--                        </div>-->
+            <!--                        <div>-->
+            <!--                            <input id="Describe" name="Describe" type="text"-->
+            <!--                                   placeholder="Describa su solicitud en un campo libre*">-->
+            <!--                            <label for="Describe"></label>-->
+            <!--                        </div>-->
+            <!--                        <div>-->
+            <!--                            <input id="work_breakdown" name="work_breakdown" type="text"-->
+            <!--                                   placeholder="Desglose de trabajo (m2)">-->
+            <!--                            <label for="work_breakdown"></label>-->
+            <!--                        </div>-->
+
+            <!--                        <button type="submit">-->
+            <!--                            Presupuesto-->
+            <!--                        </button>-->
+
+            <!--                    </div>-->
+            <!--                </form>-->
+            <!--            </div>-->
+
+
             <div class="col-xl-4 col-lg-5">
-                <form name="request" action="send-email.php" method="post" id="form">
+
+                <script type="text/javascript">var submitted=false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                        onload="if(submitted) {window.location='submitted.html';}"></iframe>
+
+                <form name="request"
+                      action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdxmBi096S8IDKxdBoDwZMG7SM-Yh-meo3xSUEEyDemxYN9bQ/formResponse"
+                      method="post" id="form" target="hidden_iframe" onsubmit="submitted=true;">
                     <div class="form-top">
                         <p class="form-title">
                             Solicitar<br> presupuesto
@@ -176,24 +229,25 @@
 
                     <div class="form-body">
                         <div>
-                            <input id="name" name="name" type="text" placeholder="Nombre">
+                            <input id="name" name="entry.1785581892" type="text" placeholder="Nombre">
                             <label for="name"></label>
                         </div>
                         <div>
-                            <input id="tel" name="tel" type="tel" placeholder="Teléfono">
+                            <input id="tel" name="entry.762305039" type="tel" placeholder="Teléfono">
                             <label for="tel"></label>
                         </div>
                         <div>
-                            <input id="email" name="email" type="email" placeholder="Correo electrónico" required>
+                            <input id="email" name="entry.1523316801" type="email" placeholder="Correo electrónico"
+                                   required>
                             <label for="email"></label>
                         </div>
                         <div>
-                            <input id="Describe" name="Describe" type="text"
+                            <input id="Describe" name="entry.1821613162" type="text"
                                    placeholder="Describa su solicitud en un campo libre*">
                             <label for="Describe"></label>
                         </div>
                         <div>
-                            <input id="work_breakdown" name="work_breakdown" type="text"
+                            <input id="work_breakdown" name="entry.502538185" type="text"
                                    placeholder="Desglose de trabajo (m2)">
                             <label for="work_breakdown"></label>
                         </div>
@@ -813,16 +867,19 @@
             <ul class="footer-contacts">
                 <li class="contact-unit">
                     <img class="d-inline-block wow fadeInLeftBig" src="images/location-icon.svg" alt="icon">
-                    <a href="https://www.google.com/maps/place/04770+%D0%90%D0%B4%D1%80%D0%B0,+%D0%90%D0%BB%D1%8C%D0%BC%D0%B5%D1%80%D0%B8%D1%8F,+%D0%98%D1%81%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F/@36.7825681,-3.1880785,11z/data=!3m1!4b1!4m5!3m4!1s0xd704dca2f0f5749:0x1c03d27be17cf570!8m2!3d36.7963773!4d-3.0676373" class="d-inline-block" target="_blank">04770 Adra (Almeria)</a>
+                    <a href="https://www.google.com/maps/place/04770+%D0%90%D0%B4%D1%80%D0%B0,+%D0%90%D0%BB%D1%8C%D0%BC%D0%B5%D1%80%D0%B8%D1%8F,+%D0%98%D1%81%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F/@36.7825681,-3.1880785,11z/data=!3m1!4b1!4m5!3m4!1s0xd704dca2f0f5749:0x1c03d27be17cf570!8m2!3d36.7963773!4d-3.0676373"
+                       class="d-inline-block" target="_blank">04770 Adra (Almeria)</a>
                 </li>
 
                 <li class="contact-unit">
-                    <img class="d-inline-block wow fadeInLeftBig" src="images/mail-icon.svg" alt="icon" data-wow-delay="0.3s">
+                    <img class="d-inline-block wow fadeInLeftBig" src="images/mail-icon.svg" alt="icon"
+                         data-wow-delay="0.3s">
                     <a href="mailto:syr_sergo_2007@hotmail.com" class="d-inline-block">syr_sergo_2007@hotmail.com</a>
                 </li>
 
                 <li class="contact-unit">
-                    <img class="d-inline-block wow fadeInLeftBig" src="images/phone-icon.svg" alt="icon" data-wow-delay="0.6s">
+                    <img class="d-inline-block wow fadeInLeftBig" src="images/phone-icon.svg" alt="icon"
+                         data-wow-delay="0.6s">
                     <a href="tel:+34617151558" class="d-inline-block">+34 617 15 15 58</a>
                 </li>
             </ul>
@@ -842,6 +899,7 @@
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
+
 
 <script src="js/scripts.js"></script>
 
